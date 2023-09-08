@@ -1,17 +1,22 @@
 import { Routes, Route, Link } from "react-router-dom";
-
+import { CartProvider } from "./hooks/useCart";
 import {Home} from "./Pages/Home";
 import {Cart} from "./Pages/Cart";
+import  './index.css';
+
 
 function App() {
   return (
-      <Routes>
-          <Route>
-              <Route index element={ <Home/> }/>
-              <Route path="cart" element={ <Cart/> }/>
-              <Route path="*" element={ <NoMatch/> }/>
-          </Route>
-      </Routes>
+      <CartProvider>
+          <Routes>
+              <Route>
+                  <Route index element={ <Home/> }/>
+                  <Route path="cart" element={ <Cart/> }/>
+                  <Route path="*" element={ <NoMatch/> }/>
+              </Route>
+          </Routes>
+      </CartProvider>
+
   );
 }
 

@@ -1,0 +1,52 @@
+.productCard {
+    width: 100%;
+    max-width: 20rem;
+    background: var(--gray-50);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cardImage {
+    width: 100%;
+}
+
+.cardName{
+    font-size: 1.2rem;
+    color: var(--gray-700);
+    line-height: 1.5;
+
+}
+
+.cardInfos {
+    padding: 1.25rem;
+    border-top: 1px solid var(--gray-400);
+}
+
+.cardPrice {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+
+.buttonAddCart {
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+    color: var(--gray-100);
+    background: var(--cyan-500);
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+
+    font-size: 1rem;
+    cursor: pointer;
+    transition-delay: 0.1s;
+}
+
+.buttonAddCart:hover {
+    background-color: var(--cyan-700);
+}

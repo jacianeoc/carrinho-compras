@@ -13,7 +13,7 @@ exports.insertProductsOnCart= async (params, cart_product) =>{
     try {
         cart_product.cart_id= parseInt(params.id) ;
         const output = await daoCart.daoInsertProductOnCard(cart_product);
-        console.log(output);
+
         return output;
 
     } catch (err) {
@@ -38,7 +38,7 @@ exports.deleteProductsOnCart= async (cart_product, params) =>{
         cart_product.product_id= params.idProduct;
 
         const output = await daoCart.daoDeleteProductOnCard(cart_product);
-        console.log(output);
+
         return output;
 
     } catch (err) {

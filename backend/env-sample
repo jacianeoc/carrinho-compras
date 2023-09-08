@@ -7,4 +7,7 @@ PGUSER=postgres
 PGPASSWORD=
 PAGINATIONSIZE=25
 PATH_PREFIX='/api/'
+EMAIL_USER=
+EMAIL_PASS=
+EMAIL_HOST='smtp-mail.outlook.com'
 NODE_ENV=production

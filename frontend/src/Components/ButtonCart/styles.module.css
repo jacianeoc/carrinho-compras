@@ -1,0 +1,15 @@
+.cartButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-100);
+    gap: 0.3rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.cartButton span  {
+    font-size: 1.15rem;
+}

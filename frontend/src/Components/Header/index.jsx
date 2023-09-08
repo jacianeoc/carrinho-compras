@@ -1,18 +1,19 @@
+import React from "react";
+import {Link} from "react-router-dom";
+
 import styles from './styles.module.css';
-import shoppingCard from '../../assets/shopping-cart.svg';
+import {ButtonCart} from "../ButtonCart";
+
 export function Header() {
     return (
         <header className={styles.header}>
-
-            <div>
+            <Link className={styles.linkCart} to="/">
                 <h1 className={styles.list}>Lista de Compras</h1>
-            </div>
-            <div>
-                <img src={shoppingCard} alt="shoppingCard"/>
-                <span>12
-                {/* {cartSize === 1 ? `${cartSize} item` : `${cartSize} itens`} */}
-                 </span>
-            </div>
+            </Link>
+
+            <Link className={styles.linkCart} to="/cart">
+                <ButtonCart />
+            </Link>
         </header>
     )
 }
