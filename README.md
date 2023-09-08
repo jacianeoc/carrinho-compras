@@ -18,18 +18,31 @@ que preferir dentro do postegres:
   * O arquivo .env terá o seguinte formato padrão:
   
       SECRET=development
+  
       PORT=3333
+  
       PGHOST=0.0.0.0
+  
       PGPORT=5432
+  
       PGDATABASE=
+  
       PGUSER=postgres
+  
       PGPASSWORD=
+  
       PAGINATIONSIZE=25
+  
       PATH_PREFIX='/api/'
+  
       EMAIL_USER=
+  
       EMAIL_PASS=
+  
       EMAIL_HOST='smtp-mail.outlook.com'
+  
       NODE_ENV=production
+  
     Atente para  EMAIL_HOST por padrão está `smtp-mail.outlook.com`, caso utilize o gmail, mudar esse falor 
      para `"smtp.gmail.com"` e atentar para as configurações presentes em seu email.
 * Fazer o seed do banco de dados:
