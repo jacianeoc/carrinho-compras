@@ -43,7 +43,7 @@ que preferir dentro do postegres:
   
       NODE_ENV=production
   
-    Atente para  EMAIL_HOST por padrão está `smtp-mail.outlook.com`, caso utilize o gmail, mudar esse falor 
+    Atente para  EMAIL_HOST, por padrão está `smtp-mail.outlook.com`, caso utilize o gmail, mudar esse valor 
      para `"smtp.gmail.com"` e atentar para as configurações presentes em seu email.
 * Fazer o seed do banco de dados:
     >npm run seed
